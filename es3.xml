@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<text>
+    il primo xml con validazione
+</text>
+<text />
+
+<!-- ERRORE OUTPUT
+    es3.xml:5: parser error : Extra content at the end of the document
+<text />
+^
+L'errore sta nel fatto che tutti gli elementi del documento devono essere figli di uno stesso elemento detto radice (root), e qui manca.
+-->
+
+<!--VERSIONE CORRETTA
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+    <text>
+        il primo xml con validazione
+    </text>
+    <text />
+</root>
+-->

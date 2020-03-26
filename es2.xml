@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<choice>
+    <sic>testo con probabile <cor> errore </sic>
+    testo corretto </cor>
+</choice>
+
+<!--OUTPUT ERRORE
+es2.xml:3: parser error : Opening and ending tag mismatch: cor line 3 and sic
+    <sic>testo con probabile <cor> errore </sic>
+                                                ^
+es2.xml:4: parser error : Opening and ending tag mismatch: sic line 3 and cor
+    testo corretto </cor>
+-->
+
+<!--VERSIONE CORRETTA
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<choice>
+    <sic>testo con probabile errore </sic>
+    <cor>testo corretto </cor>
+</choice>
+-->

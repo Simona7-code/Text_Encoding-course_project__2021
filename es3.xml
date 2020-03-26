@@ -16,6 +16,8 @@ L'errore sta nel fatto che tutti gli elementi del documento devono essere figli 
 <root>
     <text>
         il primo xml con validazione
+        <child> figlio di text </child>
+        <sibling> fratello di child e figlio di text </sibling>
     </text>
     <text />
 </root>

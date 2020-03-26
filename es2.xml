@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+    Studente: Simona Sette
+    Matricola: 544298
+    Corso: Codifica di testi 19-20
+-->
 <choice>
     <sic>testo con probabile <cor> errore </sic>
     testo corretto </cor>

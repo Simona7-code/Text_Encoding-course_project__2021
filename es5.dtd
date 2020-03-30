@@ -1,0 +1,9 @@
+<!--
+    Studente: Simona Sette
+    Matricola: 544298
+    Corso: Codifica di testi 19-20
+-->
+<!ELEMENT TEI (header, facsimile?, text+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA)>

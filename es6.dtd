@@ -1,0 +1,22 @@
+<!--
+    Studente: Simona Sette
+    Matricola: 544298
+    Corso: Codifica di testi 19-20
+-->
+<!ELEMENT TEI (header, facsimile?, text+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA|seg)*>
+
+<!ATTLIST header
+    type CDATA #FIXED "intestazione"
+    lang NMTOKEN #IMPLIED
+>
+<!ATTLIST facsimile
+    source CDATA #REQUIRED
+    ref IDREFS #IMPLIED
+>
+<!ATTLIST testo
+    id ID #REQUIRED
+    type CDATA #IMPLIED
+>

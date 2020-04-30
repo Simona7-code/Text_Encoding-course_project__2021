@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Studente: Simona Sette
+    Matricola: 544298
+    Corso: Codifica di testi 19-20
+-->
+<!DOCTYPE root SYSTEM "./DeclaEs7.dtd">
+<root>
+    <nodof>
+        text
+    </nodof>
+</root>

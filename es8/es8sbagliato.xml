@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Studente: Simona Sette
+    Matricola: 544298
+    Corso: Codifica di testi 19-20
+-->
+<!--versione con uso non corretto delle gerarchie-->
+<text>
+    <titolo>GLi assassini della Rue Morgue</titolo>
+    <intestazione>I</intestazione>
+    <pagina n="5">
+        <p>Le facoltà mentali che si[...]</p>
+        <p>La facoltà di risolvere è probabilmente molto rinfor-
+    </pagina>
+    <pagina n="6">zata dallo studio[...]
+        </p>
+    </pagina>
+</text>
+<!-- CODICE ERRORE
+es8.xml:13: parser error : expected '>'
+    </pagina>
+       ^
+es8.xml:15: parser error : Opening and ending tag mismatch: pagina line 14 and p
+        </p>
+            ^
+
+-->

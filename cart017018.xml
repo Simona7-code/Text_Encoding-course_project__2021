@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Progetto per l'esame del corso Codifica di testi 19-20
+    Studente: Simona Sette
+    Matricola: 544298
+-->
+<!DOCTYPE teiCorpus SYSTEM "tei_all.dtd">
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt> 
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Cartoline indirizzate ai Turtura</title>
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt>
+                    <resp>Trascritto da:</resp>
+                    <name xml:id="SS">Simona Sette</name>
+                </respStmt>
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt>
+                    <resp>Ente di Appartenenza:</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>   
+            </titleStmt>
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <!-- COMPILAZIONE -->
+                    <date>2018</date>
+                </edition>
+                <!-- NOME COMPILATORE -->
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <name ref="#SS">Simona Sette</name>
+                </respStmt>
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt>
+                    <resp>Compilato da:</resp>
+                    <name xml:id="TM">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico:</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2021">2021</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                    </msIdentifier>
+                </msDesc>
+                <!-- NOMI -->
+                <listPerson>
+                    <person xml:id="GT">
+                        <persName>
+                            <forename>Giuseppe</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                    <person xml:id="TC">
+                        <persName>
+                            <forename>Tommaso</forename>
+                            <surname>Cascella</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[pittore]</occupation>
+                    </person>
+                    <person xml:id="RB">
+                        <persName>
+                            <forename>Romeo</forename>
+                            <surname>Benelli</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[soldato]</occupation>
+                    </person>
+                     <person xml:id="BR">
+                        <persName>
+                            <forename><abbr>R</abbr></forename>
+                            <surname><abbr>B</abbr></surname>
+                        </persName>
+                        <note>Potrebbe trattarsi di <persName ref="#RB">Romeo Benelli</persName> 
+                        ma non ci sono abbastanza prove a supporto di questa ipotesi per poterlo affermare con certezza</note>
+                    </person>
+                </listPerson>  
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                    </place>
+                    <place xml:id="PT">
+                        <placeName>Pinzano al Tagliamento</placeName>
+                        <settlement type="località">paese</settlement>
+                        <district type="comune">Pinzano al Tagliamento</district>
+                        <district type="provincia">UD</district>
+                        <country key="N">IT</country>
+                    </place>
+                        <place xml:id="UD">
+                        <placeName>Udine</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Udine</district>
+                        <district type="provincia">UD</district>
+                        <country key="N">IT</country>
+                    </place>
+                    <place xml:id="TAA">
+                        <placeName>
+                            <region type="regione">Trentino-Alto Adige</region>
+                        </placeName>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+                <listOrg>
+                    <org xml:id="CRI">
+                        <orgName type="voluntary">Croce Rossa Italiana</orgName>
+                        <desc>La Croce Rossa Italiana è un'Organizzazione di Volontariato componente della Croce Rossa e Mezzaluna Rossa Internazionale e operante nel territorio italiano.</desc>
+                    </org>
+                </listOrg>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt> 
+                    <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                    <title>"Saluti"</title>
+                    <!-- TRASCRITTORE nome e cognome-->
+                    <respStmt>
+                        <resp>Trascritto da:</resp>
+                        <name ref="#SS">Simona Sette</name>
+                    </respStmt>
+                    <!-- ENTE DI APPARTENENZA -->
+                    <respStmt>
+                        <resp>Ente di Appartenenza:</resp>
+                        <name type="comune" ref="#SP">Comune della Spezia</name>
+                    </respStmt>   
+                </titleStmt>
+                <editionStmt>
+                    <edition>Studente di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                        <!-- COMPILAZIONE -->
+                        <date>2018</date>
+                    </edition>
+                    <!-- NOME COMPILATORE -->
+                    <respStmt>
+                        <resp>Codificato da:</resp>
+                        <name ref="#SS">Simona Sette</name>
+                    </respStmt>
+                    <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                    <respStmt>
+                        <resp>Compilato da:</resp>
+                        <name ref="#TM">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico:</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile:</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+                <publicationStmt>
+                    <publisher>Unipi</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability>
+                        <p>Available under licence only</p>
+                    </availability>
+                    <date when="2021">2021</date>
+                    <distributor>LabCD</distributor>
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                        <addrLine>Pisa</addrLine>
+                    </address>
+                </publicationStmt>    
+                <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+                <notesStmt>
+                    <note>Cartolina commemorativa della IV Guerra per l'Indipendenza Italiana stampata dalla Croce Rossa Italiana</note>
+                </notesStmt>  
+                <sourceDesc>
+                    <bibl>
+                        <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre ma indicando dentro la codifica-->
+                        <title type="custom">[L'Adige(verso Chizzola)]</title>
+                        <author ref="#TC">Tommaso Cascella</author>
+                        <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina-->
+                        <publisher ref="#CRI">Croce Rossa Italiana</publisher>
+                        <!-- LUOGO -->
+                        <pubPlace ref="#TAA">Trentino-Alto Adige</pubPlace>
+                        <!-- CRONOLOGIA-->
+                        <date>1915</date>
+                    </bibl>
+                    <msDesc>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement>La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_017_001/002</idno>
+                        </msIdentifier>
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                        <msContents>
+                            <summary>Cartolina Artistica (Geografica)</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp>Francobollo - Regno d'Italia</stamp>
+                                    </support>
+                                    <!-- CONSERVAZIONE -->
+                                    <condition>Discreto</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>   
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#RB"/>
+                        <placeName ref="#PT"/>
+                        <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                        <date type="postage" when="1915-09-16">1915-09-16</date>
+                        <date type="writing" when="1915-09-16">1915-09-16</date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#GT"/>
+                        <placeName ref="#RV"/>
+                    </correspAction>
+                </correspDesc>
+                <textClass>
+                    <keywords>
+                        <!-- descrizione -->
+                        <term>Cartolina</term>
+                        <!-- tipologia -->
+                        <term>Cartolina Artistica</term>
+                        <!-- descrizione -->
+                        <term>Paesaggio</term>
+                    </keywords>
+                </textClass>
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>
+        </teiHeader>
+        <facsimile>
+            <surface xml:id="cart017F">
+                <graphic url='img/7694-017F.jpg' width='1646px' height='1043px'/>
+            </surface>
+            <surface xml:id="cart017R">
+                <graphic url='img/7694-017R.jpg' width='1642px' height='1055px'/>
+                <zone ulx="70" uly="955" lrx="615" lry="994" xml:id="c17paint"/> 
+                <zone ulx="36" uly="42" lrx="137" lry="130" xml:id="c17idn"/> 
+                <zone ulx="58" uly="59" lrx="303" lry="306" xml:id="c17CRI"/> 
+                <zone ulx="656" uly="40" lrx="1548" lry="189" xml:id="c17fighead"/> 
+                <zone ulx="766" uly="250" lrx="956" lry="497" xml:id="c17fiquote"/> 
+                <zone ulx="712" uly="198" lrx="1550" lry="553" xml:id="c17fig"/> 
+                <zone ulx="729" uly="50" lrx="1105" lry="402" xml:id="c17timbrop1"/> 
+                <zone ulx="1242" uly="129" lrx="1629" lry="460" xml:id="c17timbrop2"/>
+                <zone ulx="1294" uly="246" lrx="1555" lry="519" xml:id="c17francobollo"/>
+                <zone ulx="665" uly="585" lrx="1637" lry="1046" xml:id="c17goesto"/>
+                <zone ulx="706" uly="616" lrx="1154" lry="732" xml:id="c17row1"/>
+                <zone ulx="741" uly="740" lrx="1491" lry="864" xml:id="c17row2"/>
+                <zone ulx="751" uly="840" lrx="1386" lry="913" xml:id="c17row3"/>
+                <zone ulx="663" uly="889" lrx="992" lry="1012" xml:id="c17rowCMM"/>
+                <zone ulx="1072" uly="896" lrx="1568" lry="1022" xml:id="c17RV"/>
+                <zone points = ' 433,51 514,10 688,199 621,244 ' xml:id="c17rowdate"/>
+                <zone points = ' 354,100 429,48 664,272 612,313 ' xml:id="c17row1.1"/>
+                <zone points = ' 342,202 392,149 645,352 611,396 ' xml:id="c17row1.2"/>
+                <zone points = ' 317,255 366,200 639,402 600,443 ' xml:id="c17row1.3"/>
+                <zone points = ' 264,308 311,259 705,542 659,599 ' xml:id="c17row1.4"/>
+                <zone points = ' 242,304 168,375 669,690 714,629 ' xml:id="c17rowinf"/> 
+                <zone points = ' 204,404 130,480 396,634 447,570 ' xml:id="c17pinz"/> 
+                <zone points = ' 282,646 349,580 650,765 618,825 ' xml:id="c17ud"/> 
+            </surface>
+        </facsimile>
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="C_017">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte" facs="#cart017F">
+                    <figure>
+                        <graphic url="img/7694-017F.jpg" />
+                        <figDesc>Vista aerea su paesaggio di montagna con fiume. Sono inoltre visibili due strutture simil-ponti e una strada.</figDesc>
+                        <head>[L'Adige(verso Chizzola)] di T. Cascella</head> 
+                    </figure> 
+                </div>
+                <div type="retro" facs="#cart017R">
+                    <div type="message">
+                        <opener>
+                            <lb facs="#c17rowdate"/>
+                            <date when="1915/09/16">16-9-1915</date>  
+                        </opener>
+                        <p></p>
+                        <closer>
+                            <salute> 
+                                <lb facs="#c17row1.1"/><s>Riceva tanti<lb facs="#c17row1.2"/>Saluti a lei<lb facs="#c17row1.3"/>e Famiglia</s>
+                            </salute>
+                            <signed>
+                                <lb facs="#c17row1.4"/><persName ref="#BR"><roleName type="military">Soldato</roleName> Benelli 
+                                <lb facs="#c17rowinf"/>Romeo</persName> Infermieria
+                                <lb facs="#c17pinz"/>
+                                <origPlace ref="#PT">Pinzano
+                                    <lb facs="#c17ud"/>
+                                    <region type="province">
+                                        <choice>
+                                            <abbr>Prov.</abbr>
+                                            <expan>Provincia</expan>
+                                        </choice>  
+                                        Udine
+                                    </region>
+                                </origPlace>
+                            </signed>
+                        </closer>
+                    </div>
+                    <div type="destination" facs="#c17goesto">
+                        <p>
+                            <stamp type="postmark" facs="#c17timbrop1"> 
+                                <mentioned>
+                                    <placeName ref="#PT"><unclear reason="faded">Pinzano al Tagliamento</unclear></placeName>
+                                    <placeName ref="#UD"><unclear reason="faded">Udine</unclear></placeName>
+                                </mentioned>
+                                <date when="1915/9/16"><unclear reason="faded">16 SET 15</unclear></date>
+                            </stamp>
+                            <stamp type="postmark" facs="#c17timbrop2"> 
+                                <mentioned>
+                                    <placeName ref="#PT"><unclear reason="faded">Pinzano al Tagliamento</unclear></placeName>
+                                    <placeName ref="#UD"><unclear reason="faded">Udine</unclear></placeName>
+                                </mentioned>
+                                <date when="1915/9/16"><unclear reason="faded">16 SET 15</unclear></date>
+                            </stamp>
+                            <stamp type="org" facs="#c17CRI">
+                                <mentioned>
+                                    <unclear reason="faded"> CROCE ROSSA ITALIANA</unclear>
+                                </mentioned>
+                            </stamp>
+                            <stamp type="postage" facs="#c17francobollo">francobollo da 5 centesimi del Regno d'Italia</stamp> 
+                        </p>
+                        <p>
+                            <address>
+                                <lb facs="#c17row1"/><addrLine>Al <roleName type="honorific" full="abb">Signor</roleName></addrLine> 
+                                <lb facs="#c17row2"/><addrLine><persName ref="#TG">Turtura Giuseppe</persName></addrLine> 
+                                <lb facs="#c17row3"/><addrLine>Via Girolamo Rossi</addrLine>
+                                <lb/><addrLine><addName type="honorific" facs="#c17CMM">Capo Mastro<lb/>Muratore</addName></addrLine>
+                                <lb facs="#c17RV"/><addrLine><placeName ref="#RV">Ravenna</placeName></addrLine>
+                            </address>
+                        </p>
+                        <p> 
+                            <idno type="Numerocartolina" facs="#c17idn">17</idno>
+                        </p>
+                    </div>
+                    <div type="cardinfo">
+                        <p>
+                            <figure facs="#c17fig">
+                                <figDesc>Rettangolo dai bordi decorati contenente il simbolo della Croce Rossa Italiana nel centro. 
+                                        All'interno sono presenti due rettangoli minori; in uno di essi vi è scritto:
+                                        <quote facs="#c17fiquote">
+                                            <lb/><s>EDIZIONE<lb/>DELLA<lb/>CROCE ROSSA<lb/>ITALIANA</s>
+                                            <lb/><s>A PROPRIO<lb/>ESCL<distinct type="diachronic">V</distinct>SIVO<lb/>BENEFICIO</s>
+                                        </quote>
+                                </figDesc>
+                                <head facs="#c17fighead">
+                                    <lb/><s>CARTOLINA POSTALE COMMEMORATIVA
+                                    <lb/>DELLA IV G<distinct type="diachronic">V</distinct>ERRA PER L'INDIPENDENZA
+                                    <choice>
+                                        <abbr>ITAL.NA</abbr>
+                                        <expan>Italiana</expan>
+                                    </choice></s>
+                                </head>
+                            </figure>
+                        </p>
+                        <p>
+                            <lb facs="#c17paint"/><s>L'Adige(verso Chizzola).
+                            <persName ref="#TC">T. Cascella.</persName></s>
+                        </p> 
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>      
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt> 
+                    <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                    <title>"Ricorda e Saluta"</title>
+                    <!-- TRASCRITTORE nome e cognome-->
+                    <respStmt>
+                        <resp>Trascritto da:</resp>
+                        <name ref="#SS">Simona Sette</name>
+                    </respStmt>
+                     <!-- ENTE DI APPARTENENZA -->
+                    <respStmt>
+                        <resp>Ente di Appartenenza:</resp>
+                        <name type="comune" ref="#SP">Comune della Spezia</name>
+                    </respStmt>   
+                </titleStmt>
+                <editionStmt>
+                    <edition>Studente di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                        <!-- COMPILAZIONE -->
+                        <date>2018</date>
+                    </edition>
+                    <!-- NOME COMPILATORE -->
+                    <respStmt>
+                        <resp>Codificato da:</resp>
+                        <name ref="#SS">Simona Sette</name>
+                    </respStmt>
+                     <!-- REFERENTE SCIENTIFICO-->
+                    <respStmt>
+                        <resp>Compilato da:</resp>
+                        <name ref="#TM">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico:</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile:</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+                <publicationStmt>
+                    <publisher>Unipi</publisher>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability>
+                        <p>Available under licence only</p>
+                    </availability>
+                    <date when="2021">2021</date>
+                    <distributor>LabCD</distributor>
+                    <address>
+                        <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                        <addrLine>Pisa</addrLine>
+                    </address>
+                </publicationStmt>
+                <notesStmt>
+                    <note>Cartolina commemorativa della IV Guerra per l'Indipendenza Italiana stampata dalla Croce Rossa Italiana</note>
+                </notesStmt>
+                <sourceDesc>
+                    <bibl>
+                        <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre ma indicando dentro la codifica-->
+                        <title type="custom">[Avanscoperta(dall'altipiano carsico)]</title>
+                        <author ref="#TC">Tommaso Cascella</author>
+                       <!-- PRODUZIONE Chi ha prodotto / pubblicato la cartolina-->
+                        <publisher ref="#CRI">Croce Rossa Italiana</publisher>
+                    </bibl>
+                    <msDesc>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <msIdentifier>
+                            <country>Italia</country>
+                            <settlement>La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_018_001/002</idno>
+                        </msIdentifier>
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                        <stamp>Francobollo - Regno d'Italia</stamp>
+                                    </support>
+                                    <!-- CONSERVAZIONE -->
+                                    <condition>Discreto</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>   
+                </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#BR"/>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"/>
+                        <placeName ref="#RV"/>
+                    </correspAction>
+                </correspDesc>
+                <textClass>
+                    <keywords>
+                        <!-- soggettario -->
+                        <term>Cartolina</term>
+                        <!-- tipologia -->
+                        <term>Cartolina Artistica</term>
+                        <!-- descrizione -->
+                        <term>Soldati a cavallo</term>
+                    </keywords>
+                </textClass>
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+            </profileDesc>         
+        </teiHeader> 
+        <facsimile>
+            <surface xml:id="cart018F">
+                <graphic url='img/7694-018F.jpg' width='1646px' height='1043px'/>
+            </surface>
+            <surface xml:id="cart018R">
+                <graphic url='img/7694-018R.jpg' width='1646px' height='1043px'/>
+                <zone ulx="12" uly="2" lrx="104" lry="78" xml:id="c18idn"/> 
+                <zone points = ' 5,524 62,614 368,296 294,230 ' xml:id="c18row1"/> 
+                <zone points = ' 221,437 272,539 503,374 431,270 ' xml:id="c18row2"/>
+                <zone points = ' 231,576 338,698 650,432 549,306 ' xml:id="c18firma"/>
+                <zone ulx="74" uly="844" lrx="296" lry="914" xml:id="c18rigaGapleft"/>
+                <zone ulx="78" uly="906" lrx="623" lry="993" xml:id="c18paint"/>
+                <zone ulx="39" uly="48" lrx="303" lry="314" xml:id="c18CRI"/>
+                <zone points = ' 362,2 338,234 624,269 653,36 ' xml:id="c18francobollo"/>
+                <zone ulx="245" uly="2" lrx="582" lry="146" xml:id="c18timbrop"/> 
+                <zone ulx="669" uly="20" lrx="1577" lry="165" xml:id="c18headfig"/>
+                <zone ulx="722" uly="182" lrx="1559" lry="527" xml:id="c18fig"/>
+                <zone ulx="761" uly="221" lrx="974" lry="488" xml:id="c18figquote"/>
+                <zone ulx="513" uly="592" lrx="1608" lry="1037" xml:id="c18goesto"/>
+                <zone ulx="710" uly="593" lrx="1592" lry="698" xml:id="c18row1.1"/>
+                <zone ulx="900" uly="608" lrx="1181" lry="696" xml:id="c18gap1.1"/>
+                <zone ulx="672" uly="714" lrx="1529" lry="825" xml:id="c18row2.1"/>
+                <zone ulx="677" uly="719" lrx="875" lry="810" xml:id="c18gap2.1"/>
+                <zone ulx="728" uly="833" lrx="1394" lry="917" xml:id="c18street"/>
+                <zone ulx="528" uly="909" lrx="1499" lry="1041" xml:id="c18RV"/>
+            </surface>
+        </facsimile>
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="C_018">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte" facs="#cart018F">
+                    <figure>
+                        <graphic url="img/7694-018F.jpg"/>
+                        <figDesc>Due soldati della cavalleria in perlustrazione di una valle.</figDesc>
+                        <head>[Avanscoperta(dall'altipiano Carsico)] di T.Cascella</head>
+                    </figure>
+                </div>
+                <div facs="#cart018R" type="retro">
+                    <div type="message"> 
+                        <opener>
+                            <salute>
+                                <s><lb facs="#c18row1"/>Ricorda e<lb facs="#c18row2"/>Saluta</s>
+                            </salute>
+                        </opener>
+                        <p></p>
+                        <closer>
+                            <signed>
+                                <lb facs="#c18firma"/>
+                                <persName ref="#BR">
+                                    <abbr>BR</abbr>
+                                </persName>
+                            </signed>
+                            <date> 
+                                <lb/><s>7<gap reason="illegible" facs="#c18rigaGapleft"/>
+                                <choice>
+                                    <abbr>ott</abbr>
+                                    <expan>ottobre</expan>
+                                </choice>15</s>
+                            </date>
+                        </closer>
+                    </div>
+                    <div type="destination" facs="#c18goesto">
+                        <p>
+                            <stamp type="postmark" facs="#c18timbrop"> 
+                                <mentioned>
+                                    <gap reason="position" extent="stamp"/>
+                                </mentioned>
+                            </stamp>
+                            <stamp type="org" facs="#c18CRI">
+                                <mentioned>
+                                    <unclear reason="faded">CROCE ROSSA ITALIANA</unclear>
+                                </mentioned>
+                            </stamp>
+                            <stamp type="postage" facs="#c18francobollo">francobollo da 5 centesimi del Regno d'Italia</stamp>   
+                        </p>
+                        <p>
+                            <address>
+                                <lb facs="#c18row1.1"/>
+                                <addrLine>
+                                    <lb/>All' <gap quantity="8" unit="chars" reason="illegible" facs="#c18gap1.1"/>
+                                    <roleName type="honorific">Signorina</roleName>
+                                </addrLine> 
+                                <lb facs="#c18row2.1"/>
+                                <addrLine><gap reason="illegible" facs="#c18gap2.1"/>
+                                    <persName ref="#OT">Oliva Turtura</persName>
+                                </addrLine> 
+                                <lb facs="#c18street"/>
+                                <addrLine>Via Girolamo Rossi</addrLine>
+                                <lb facs="#c18RV"/>
+                                <addrLine><placeName ref="#RV">Ravenna</placeName>
+                                    <choice>
+                                        <abbr>S.</abbr> 
+                                        <expan>Santo</expan>
+                                    </choice>
+                                    Vittore
+                                </addrLine>
+                            </address>
+                        </p>
+                         <p> 
+                            <idno type="Numerocartolina" facs="#c18idn">18</idno>
+                        </p>
+                    </div>
+                    <div type="cardinfo">
+                        <p>
+                            <figure facs="#c18fig">
+                                <figDesc>Rettangolo dai bordi decorati contenente il simbolo della croce rossa italiana al centro. 
+                                        All'interno sono presenti due ulteriori rettangoli; in uno di essi vi è scritto: 
+                                        <quote facs="#c18figquote">
+                                            <lb/><s>EDIZIONE<lb/>DELLA<lb/>CROCE ROSSA<lb/>ITALIANA</s>
+                                            <lb/><s>A PROPRIO<lb/>ESCL<distinct type="diachronic">V</distinct>SIVO<lb/>BENEFICIO</s>
+                                        </quote>
+                                </figDesc>
+                                 <head facs="#c18headfig">
+                                    <lb/><s>CARTOLINA POSTALE COMMEMORATIVA
+                                    <lb/>DELLA IV G<distinct type="diachronic">V</distinct>ERRA PER L'INDIPENDENZA
+                                    <choice>
+                                        <abbr>ITAL.NA</abbr>
+                                        <expan>Italiana</expan>
+                                    </choice></s>
+                                </head>
+                            </figure>
+                        </p>
+                        <p facs="#c18paint">
+                            <lb/><s>Avanscoperta(dall'altipiano Carsico)</s>
+                            <lb/><persName ref="#TC">T. Cascella</persName>   
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>     
+</teiCorpus>

@@ -10,4 +10,4 @@ Questo progetto consiste nella realizzazione di una pagina web che presenta la c
 italiana, estratti da 2 cartoline risalenti ai primi anni del 1900. 
 La codifica dei testi è stata svolta seguendo i principi della tei (https://tei-c.org/) ed è contenuta nei file xml.
 I templete e le loro modalità di visualizzazione sono definiti nel file xsl.
-Sono inoltre presenti delle cartelle contenente esercizi.
+Sono inoltre presenti delle cartelle contenenti esercizi.

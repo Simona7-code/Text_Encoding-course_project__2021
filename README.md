@@ -1,5 +1,5 @@
 This project consists in the creation of a web page representing the encoding of informations extracted from italian texts, which are
-contained in two postcards dating back to the early 1900s.
+contained in 2 postcards dating back to the early 1900s.
 The text encoding was carried out following the TEI principles (https://tei-c.org/) and is contained in the xml files.
 The templetes and their display modes are defined in the xsl file.
 
